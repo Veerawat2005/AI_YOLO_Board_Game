@@ -1,0 +1,24 @@
+# Virtual environment
+/env/
+
+# ผลเทรนและ cache
+/runs/
+/weights/
+__pycache__/
+*.pyc
+*.cache
+
+# Dataset เต็ม (แชร์ผ่าน Google Drive)
+/dataset/
+/images/
+dataset.zip
+
+# โมเดลพื้นฐานที่ ultralytics โหลดให้เอง
+yolo26n.pt
+
+# ไฟล์ export จากเครื่องมือ label
+project-*.json
+
+# สคริปต์ช่วยที่ไม่ต้องอัปโหลด
+make_sample.py
+shrink_sample.py
