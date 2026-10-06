@@ -2,10 +2,6 @@
 
 โปรเจกต์ Object Detection สำหรับตรวจจับกล่องบอร์ดเกม 3 ประเภท ได้แก่ **Exploding Kittens (HALLSExplodingKit)**, **Insider** และ **UNO** โดยใช้ YOLO26
 
-รองรับการตรวจจับทั้งจาก **รูปภาพ** และ **Webcam แบบ Real-time** พร้อมโมเดลที่ Train แล้วอยู่ในไฟล์ `best.pt`
-
-![ตัวอย่างผลตรวจจับ](docs/result_exploding_kittens.png)
-
 ## Project Overview
 
 วัตถุประสงค์คือพัฒนาโมเดล Computer Vision สำหรับตรวจจับกล่องบอร์ดเกมจากภาพ โดยแบ่งวัตถุออกเป็น 3 Class
