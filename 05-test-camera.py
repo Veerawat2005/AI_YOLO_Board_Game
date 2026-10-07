@@ -20,7 +20,7 @@ def main():
         results = model.predict(
             source=frame,
             device=0,        # ใช้ GPU (ถ้าไม่มี CUDA ให้เปลี่ยนเป็น 'cpu')
-            conf=0.5,
+            conf=0.8,
             verbose=False
         )
 

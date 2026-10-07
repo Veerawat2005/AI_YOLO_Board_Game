@@ -19,6 +19,10 @@ yolo26n.pt
 # ไฟล์ export จากเครื่องมือ label
 project-*.json
 
+# วิดีโอและรูปทดสอบที่รากโฟลเดอร์ (sample_dataset ไม่โดนกัน)
+*.mp4
+/*.jpg
+
 # สคริปต์ช่วยที่ไม่ต้องอัปโหลด
 make_sample.py
 shrink_sample.py

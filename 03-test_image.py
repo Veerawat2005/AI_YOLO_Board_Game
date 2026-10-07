@@ -1,14 +1,23 @@
+from pathlib import Path
+
 from ultralytics import YOLO
 
-# โหลดโมเดลที่ผ่านการฝึก (Trained Model)
-model = YOLO(r"E:\จารย์รุจิ\Ai_yolo\runs\detect\train-6\weights\best.pt")
+BASE = Path(__file__).resolve().parent
 
-# นำโมเดลไปทดสอบกับรูปภาพ
+# โมเดลล่าสุด (best.pt ที่รากโฟลเดอร์ คือ train-6 แล้ว)
+model = YOLO(str(BASE / "best.pt"))
+
+# รูปอยู่ในโฟลเดอร์เดียวกับสคริปต์
+image = BASE / "3c143777-e201-4d7b-a687-83f53d382f3e.jpg"
+
 results = model.predict(
-    r"E:\จารย์รุจิ\Ai_yolo\dataset\images\val\20261002_124932_001.jpg",
-    conf=0.5,
+    str(image),
+    conf=0.8,
     save=True
 )
 
-# แสดงผลลัพธ์การตรวจจับของรูปภาพแรก
 results[0].show()
+
+# สรุปสิ่งที่ตรวจเจอ
+for box in results[0].boxes:
+    print(model.names[int(box.cls)], f"{float(box.conf):.2f}")
