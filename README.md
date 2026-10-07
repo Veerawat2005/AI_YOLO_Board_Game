@@ -109,7 +109,7 @@ pip install -r requirements.txt
 | ชุดข้อมูล | รายละเอียด |
 |-----------|------------|
 | ตัวอย่าง | โฟลเดอร์ `sample_dataset/` ใน repo นี้ |
-| ข้อมูลเต็ม (~900 รูป, 3 Class) | [ดาวน์โหลดจาก Google Drive](https://drive.google.com/drive/folders/1-TuHKXEEOEMx6_ugX6IU5hWZc_iiqF9J) |
+| ข้อมูลเต็ม (~900 รูป, 3 Class) | https://drive.google.com/drive/folders/1-TuHKXEEOEMx6_ugX6IU5hWZc_iiqF9J
 
 วิธีใช้ข้อมูลเต็ม: แตกไฟล์ `dataset.zip` ไว้ในโฟลเดอร์โปรเจกต์ แล้วแก้ `path` ใน `data.yaml` ให้ตรงกับเครื่องของคุณ
 
